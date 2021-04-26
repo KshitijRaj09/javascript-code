@@ -17,10 +17,19 @@ div.forEach((d) => {
 
 function clickHandler(event) {
   let element = event.target;
+  let p;
   div.forEach((d) => {
-    d === element
-      ? d.classList.add("addClass")
-      : d.classList.remove("addClass");
+    if (d === element) {
+      // p = document.createElement("p");
+      // p.innerText = `P tag inside ${event.target.innerText}`;
+      // event.target.appendChild(p);
+
+      d.classList.add("addClass");
+    } else {
+      // let parent = p.parentNode;
+      // parent.remove(p);
+      d.classList.remove("addClass");
+    }
   });
 }
 
