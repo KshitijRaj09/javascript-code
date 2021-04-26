@@ -1,0 +1,15 @@
+body {
+  font-family: sans-serif;
+}
+
+.initialBox {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  position: relative;
+  left: 30px;
+}
+
+.addClass {
+  background-color: green;
+}

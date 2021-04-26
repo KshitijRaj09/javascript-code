@@ -1,0 +1,70 @@
+import "./styles.css";
+
+// document.getElementById("app").innerHTML = `
+// <h1>Hello Vanilla!</h1>
+// <div>
+//   We use the same configuration as Parcel to bundle this sandbox, you can find more
+//   info about Parcel
+//   <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
+// </div>
+// `;
+
+const div = document.querySelectorAll("div");
+
+div.forEach((d) => {
+  d.addEventListener("click", clickHandler);
+});
+
+function clickHandler(event) {
+  let element = event.target;
+  div.forEach((d) => {
+    d === element
+      ? d.classList.add("addClass")
+      : d.classList.remove("addClass");
+  });
+}
+
+// function maxChar(str) {
+//   let maxChar = {};
+//   let max = 0;
+//   let maxValue = "";
+//   for (let characters of str) {
+//     if (!maxChar[characters]) {
+//       maxChar[characters] = 1;
+//     } else {
+//       maxChar[characters] += 1;
+//     }
+//   }
+//   console.log(maxChar);
+//   for (let char in maxChar) {
+//     if (max < maxChar[char]) {
+//       max = maxChar[char];
+//       maxValue = char;
+//     }
+//   }
+//   let arr = [maxValue, max];
+//   return arr;
+// }
+
+// console.log(maxChar("abcccccccd"));
+// console.log(maxChar("apple 1231111"));
+
+// chunk([1, 2, 3, 4], 2) --> [[ 1, 2], [3, 4]]
+// chunk([1, 2, 3, 4, 5], 2) --> [[ 1, 2], [3, 4], [5]]
+// chunk([1, 2, 3, 4, 5, 6, 7, 8], 3) --> [[ 1, 2, 3], [4, 5, 6], [7, 8]]
+// chunk([1, 2, 3, 4, 5], 4) --> [[ 1, 2, 3, 4], [5]]
+// chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
+
+// function chunk(arr, size) {
+//   let chunked = [];
+
+//   for (let a of arr) {
+//     let lastElement = chunked[chunked.length - 1];
+//     if (!lastElement || lastElement.length === 2) {
+//       chunked.push([a]);
+//     } else chunked.push(a);
+//   }
+//   return chunked;
+// }
+
+// console.log(chunk([1, 3, 2, 5], 2));
