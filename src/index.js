@@ -78,8 +78,17 @@ function clickHandler(event) {
 
 // console.log(chunk([1, 3, 2, 5], 2));
 
-const arr = [1, 4, 2];
+const arr = [1, 4, 2, 7, 6];
 
-let a1 = arr.shift();
+//let a1 = arr.splice(-1,0, 8);
 
-console.log(arr, a1);
+const arr2 = ["Hello", "World"];
+
+const arr3 = [...arr2, ...arr]; //spread operator
+
+const arr4 = arr2.concat(arr);
+// arr2.push({ name: "Kshitij" }); //We can push items in constant array but we cannot initilize entry new values
+
+// arr2.splice(0);
+
+console.log(arr4);
