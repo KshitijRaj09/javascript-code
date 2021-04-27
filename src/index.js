@@ -77,3 +77,9 @@ function clickHandler(event) {
 // }
 
 // console.log(chunk([1, 3, 2, 5], 2));
+
+const arr = [1, 4, 2];
+
+let a1 = arr.shift();
+
+console.log(arr, a1);
