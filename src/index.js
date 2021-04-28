@@ -139,14 +139,50 @@
 
 // console.log(arr2)
 
-const employees = {
-  boss: "Michael",
-  secretary: "Pam",
-  sales: "Jim",
-  accountant: "Oscar"
+// const employees = {
+//   boss: "Michael",
+//   secretary: "Pam",
+//   sales: "Jim",
+//   accountant: "Oscar"
+// };
+
+// // Get the keys of the object
+// const keys = Object.entries(employees);
+
+// console.log(keys);
+
+// Initialize an object
+// const user = {
+//   username: 'AzureDiamond',
+//   password: 'hunter2'
+// };
+
+// // Seal the object
+// Object.seal(user);
+
+// user.password = '*******';
+// user.active = true;
+
+// console.log(user);
+
+// Initialize an object
+const name = {
+  firstName: "Philip",
+  lastName: "Fry"
 };
 
-// Get the keys of the object
-const keys = Object.entries(employees);
+// Initialize another object
+// const details = {
+//   job: 'Delivery Boy',
+//   employer: 'Planet Express'
+// };
 
-console.log(keys);
+// // Merge the objects
+// const character = Object.assign(name, details);
+
+// console.log(details);
+// console.log(Object.getPrototypeOf(details))
+
+const newName = Object.create(name);
+
+console.log(newName);
